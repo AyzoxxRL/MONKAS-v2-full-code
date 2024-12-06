@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-code"></i>
+            Portfolio
+        </a>
+        <ul class="nav-links">
+            <li class="active"><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Développeur Web & Designer</h1>
+            <p>Création d'applications web et mobile sur mesure</p>
+            <a href="#contact" class="cta-button">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Mes Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-service="web">
+                <div class="service-preview">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement Web</h3>
+                    <p>Sites web responsifs et applications web modernes</p>
+                    <span class="service-more">En savoir plus</span>
+                </div>
+                <div class="service-details">
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Sites web sur mesure</li>
+                        <li><i class="fas fa-check"></i> Applications web progressives</li>
+                        <li><i class="fas fa-check"></i> E-commerce</li>
+                        <li><i class="fas fa-check"></i> Optimisation SEO</li>
+                        <li><i class="fas fa-check"></i> Maintenance et support</li>
+                    </ul>
+                    <div class="service-technologies">
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" data-service="mobile">
+                <div class="service-preview">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Apps Mobile</h3>
+                    <p>Applications mobiles natives et cross-platform</p>
+                    <span class="service-more">En savoir plus</span>
+                </div>
+                <div class="service-details">
+                    <h3>Développement Mobile</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Applications iOS et Android</li>
+                        <li><i class="fas fa-check"></i> Applications hybrides</li>
+                        <li><i class="fas fa-check"></i> UI/UX Mobile</li>
+                        <li><i class="fas fa-check"></i> Tests et déploiement</li>
+                        <li><i class="fas fa-check"></i> Maintenance continue</li>
+                    </ul>
+                    <div class="service-technologies">
+                        <span>React Native</span>
+                        <span>Flutter</span>
+                        <span>Swift</span>
+                        <span>Kotlin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" data-service="design">
+                <div class="service-preview">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Web Design</h3>
+                    <p>Interfaces utilisateur modernes et intuitives</p>
+                    <span class="service-more">En savoir plus</span>
+                </div>
+                <div class="service-details">
+                    <h3>Web Design</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> Maquettes interactives</li>
+                        <li><i class="fas fa-check"></i> Identité visuelle</li>
+                        <li><i class="fas fa-check"></i> Design système</li>
+                        <li><i class="fas fa-check"></i> Animations web</li>
+                    </ul>
+                    <div class="service-technologies">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Photoshop</span>
+                        <span>Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <p class="subtitle">Découvrez mes derniers projets</p>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Les projets seront ajoutés dynamiquement via JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>À Propos</h2>
+                <p class="subtitle">Développeur passionné & Designer créatif</p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Avec plus de 5 ans d'expérience dans le développement web et mobile, je crée des solutions digitales sur mesure qui répondent aux besoins spécifiques de mes clients.</p>
+                        <div class="skills">
+                            <h3>Compétences Techniques</h3>
+                            <div class="skill-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Python</span>
+                                <span>UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projets Réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Clients Satisfaits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Années d'Expérience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>À Propos</h3>
+                    <p>Développeur web et designer freelance, je crée des expériences digitales uniques et innovantes.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Développement Web</a></li>
+                        <li><a href="#services">Applications Mobile</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Consulting Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contact@monsite.com</li>
+                        <li><i class="fas fa-phone"></i> +33 6 12 34 56 78</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Paris, France</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Suivez-moi</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-nav">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">À propos</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">&copy; 2024 Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
